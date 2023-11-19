@@ -1,0 +1,92 @@
+/*-----------------------------------GENERALIDADES------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald',sans-serif;
+}
+
+object{
+    width: 100%;
+    height: 300px;
+    z-index: 1;
+    position: absolute;
+}
+
+p, b{
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 20px 0;
+}
+
+/*-----------------------------------ENCABEZADO------------------------------------------*/
+
+.encabezado {
+    display: block;
+    width: 100%;
+    height: 350px;
+    background-color: black;
+    background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("../multimedia/fondo2.jpg");
+    background-position: top 65% center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.encabezado > h1 {
+    position: relative;
+    width: 100%;
+    top: 40%;
+    color: #fff;
+    font-size: 65px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/*-----------------------------------BIENVENIDA------------------------------------------*/
+
+.bienvenida{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 100px 80px;
+}
+
+.bienvenida_img{
+    flex-basis: 25%;
+    height: 550px;
+    background-image: url("../multimedia/yoshi.jpg");
+    background-position: center left 70%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bienvenida_text{
+    flex-basis: 60%;
+}
+
+.bienvenida_text > h1{
+    text-align: center;
+    margin: 30px auto;
+    font-size: 40px;
+}
+
+/*-----------------------------------MISION Y VISION----------------------------------------*/
+
+.cualidades{
+    margin: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.cualidades > h1{
+    text-align: center;
+    background-color: #ddd;
+    padding: 120px;
+}
+
+.cualidades > p{
+    padding: 0 30px;
+}

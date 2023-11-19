@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+*{
+    color: white;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+object{
+    z-index: 1;
+    position: fixed;
+}
+
+body{
+    position: absolute;
+    width: 100%;
+    height: 110%;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../multimedia/fondo1.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.contenedor_titulos{
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    margin: auto;
+    top: 30%;
+}
+
+h1 {
+    font-size: 120px;
+}
+
+p {
+    font-size: 30px;
+}

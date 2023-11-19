@@ -1,0 +1,56 @@
+/*-----------------------------------GENERALIDADES------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 23px;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+/*-------------------------------------HEADER------------------------------------------*/
+
+header{
+    width: 100%;
+    padding: 15px 30px;
+    background: transparent;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    z-index: 3;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #fff;
+    gap: 20px;
+}
+
+.menu_horizontal{
+    position: relative;
+    display: flex;
+}
+.menu_horizontal > li{
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.menu_horizontal > li > a{
+    color: #fff;
+    display: block;
+    padding: 15px 25px;
+}
+
+.menu_horizontal > li > a:hover{
+    color: #9c9c9c;
+    transition: all .3s;
+}
