@@ -13,6 +13,11 @@ object{
     position: absolute;
 }
 
+
+.navbar{
+    position: fixed;
+    top: 0
+}
 body{
     position: absolute;
     width: 100%;
