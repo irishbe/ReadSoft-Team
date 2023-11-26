@@ -12,13 +12,12 @@
     <div class="encabezado">
         <h1>Integrantes</h1>
     </div>
-
     <div class="fila_tarjetas">
 
         <div class="tarjeta">
 
             <div class="front">
-                <img src="../multimedia/luis_cuadros.jpg">
+                <img src="../multimedia/luis_cuadros.jpg" style="object-position: center;">
                 <h3>Cuadros Calapuja<br>Luis Fernando</h3>
             </div>
 
@@ -29,7 +28,7 @@
                     <a class="github" href="https://github.com/LuisFerCuadros"><img src="../multimedia/github.png"></a>
                     <a class="instagram" href="https://www.instagram.com/litfer_5/"><img src="../multimedia/instragram.jpg"></a>
                 </div>
-                <a href="#">Más información</a>
+                <button id="bt-open-modal" onclick="mostrar(0)">Mas información</button>
             </div>
 
         </div>
@@ -47,7 +46,7 @@
                 <div class="iconos">
                     <a class="github" href="https://github.com/LuisF00"><img src="../multimedia/github.png"></a>
                 </div>
-                <a href="#">Más información</a>
+                <button id="bt-open-modal" onclick="mostrar(1)">Mas información</button>
             </div>
 
         </div>
@@ -55,8 +54,7 @@
         <div class="tarjeta">
 
             <div class="front">
-                <!--<img src="../multimedia/davi.jpg">-->
-                <video autoplay><source src="../multimedia/video2.mp4" type="video/mp4"></video>
+                <img src="../multimedia/davi.jpg" style="object-position: top;">
                 <h3>Guzman Chavez<br>Manuel David</h3>
             </div>
 
@@ -66,7 +64,7 @@
                 <div class="iconos">
                     <a class="github" href="https://github.com/WhenDavi"><img src="../multimedia/github.png"></a>
                 </div>
-                <a href="#">Más información</a>
+                <button id="bt-open-modal" onclick="cerrar(2)">Mas información</button>
             </div>
 
         </div>
@@ -84,7 +82,7 @@
                 <div class="iconos">
                     <a class="github" href="https://github.com/irishbe"><img src="../multimedia/github.png"></a>
                 </div>
-                <a href="#">Más información</a>
+                <button id="bt-open-modal" onclick="cerrar(3)">Mas información</button>
             </div>
 
         </div>
@@ -102,7 +100,7 @@
                 <div class="iconos">
                     <a class="github" href="https://github.com/kriveramarcos"><img src="../multimedia/github.png"></a>
                 </div>
-                <a href="#">Más información</a>
+                <button id="bt-open-modal" onclick="cerrar(4)">Mas información</button>
             </div>
 
         </div>
@@ -121,11 +119,93 @@
                     <a class="github" href="https://github.com/Hecze"><img src="../multimedia/github.png"></a>
                     <a class="linkedin" href="https://pe.linkedin.com/in/hector-zerrillo-a24b04288"><img src="../multimedia/linkedin.png"></a>
                 </div>
-                <a href="#">Más información</a>
+                <button id="bt-open-modal" onclick="mostrar(5)">Mas información</button>
             </div>
 
         </div>
-
     </div>
+
+
+
+    <div class="contenedor_infos">
+        <div id="info_modal">
+            <img src="../multimedia/luis_cuadros.jpg" style="object-position: top;">
+            <div>
+                <h3>Cuadros Calapuja Luis Fernando</h3>
+                <h4>Investigador académico principal</h4>
+                <p>Estudiante de la carrera de Ingeniería de Software de la UNMSM, si algo me interesa lo aprendo.</p>
+                <button id="bt-close-modal" onclick="cerrar(0)">Cerrar</button>
+            </div>
+        </div>
+
+        <div id="info_modal">
+            <img src="../multimedia/luis_facundo.jpeg" style="object-position: top;">
+            <div>
+                <h3>Facundo Vargas Luis Fernando</h3>
+                <h4>Co-investigador académico</h4>
+                <p>Fisiano con interés en aprender muchas cosas pero con poco tiempo.</p>
+                <button id="bt-close-modal" onclick="cerrar(1)">Cerrar</button>
+            </div>
+        </div>
+
+        <div id="info_modal">
+            <img src="../multimedia/davi.jpg" style="object-position: top;">
+            <div>
+                <h3>Manuel David Guzman Chavez</h3>
+                <h4>Desarrollador web</h4>
+                <p>Me gusta crear cosas y aprender a hacerlas.</p>
+                <button id="bt-close-modal" onclick="cerrar(2)">Cerrar</button>
+            </div>
+        </div>
+
+        <div id="info_modal">
+            <img src="../multimedia/iris.jpg" style="object-position: top;">
+            <div>
+                <h3>Hanampa Bellido Iris Marisol</h3>
+                <h4>Diseñadora web</h4>
+                <p>¡Hola! Soy Iris, me gusta el diseño y el arte.</p>
+                <button id="bt-close-modal" onclick="cerrar(3)">Cerrar</button>
+            </div>
+        </div>
+
+        <div id="info_modal">
+            <img src="../multimedia/hector.jpg" style="object-position: top;">
+            <div>
+                <h3>Rivera Marcos Kevin Jesus</h3>
+                <h4>Revisor y editor</h4>
+                <p>Soy un entusiasta y apasionado a los mundos virtuales de los videojuegos, donde la diversión no tiene fronteras y cada clic es el comienzo de una nueva y emocionante aventura. Mi objetivo es descubrir los secretos de cada juego, compartir experiencias únicas y conectar con la comunidad gamer.</p>
+                <button id="bt-close-modal" onclick="cerrar(4)">Cerrar</button>
+            </div>
+        </div>
+
+        <div id="info_modal">
+            <img src="../multimedia/hector.jpg" style="object-position: top;">
+            <div>
+                <h3>Zerrillo Gonzales Hector Manuel</h3>
+                <h4>Responsable de publicación</h4>
+                <p>Amante de los animales, estudiante de ingeniería de software con la aspiración de emprender y obtener beneficios financieros, inadvertidamente enamorado del mundo de la tecnología y las posibilidades de la inteligencia artificial. Autodidacta y con la aspiración de convertirse en filántropo, mantiene un enfoque sencillo sin olvidar las raíces que marcan el camino.</p>
+                <button id="bt-close-modal" onclick="cerrar(5)">Cerrar</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function mostrar(i){
+            var contenedor = document.getElementsByClassName('contenedor_infos')[i];
+            var modal = document.getElementById('info_modal');
+
+            modal.style.visibility = "visible";
+            contenedor.style.zIndex = 1;
+            modal.style.zIndex = 1;
+        }
+
+        function cerrar(i){
+            let contenedor = document.getElementsByClassName('contenedor_infos')[i];
+            let modal = document.getElementById('info_modal');
+
+            modal.style.visibility = "hidden";
+            contenedor.style.zIndex = -i;
+            modal.style.zIndex = -i;
+        }
+    </script>
 </body>
 </html>
